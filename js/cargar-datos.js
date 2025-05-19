@@ -12,7 +12,8 @@ linksCategorias.forEach((linkCategoria) => {
       items.forEach((item) => {
          const { Categoria, Id, Nombre, Autor, Portada, Descripcion, Rating } = item;
 
-         if (linkCategoria.innerText != Categoria) return;
+         let innerText = linkCategoria.innerText;
+         if (innerText.toLowerCase() != Categoria.toLowerCase()) return;
          const articuloContenedor = document.querySelector("article." + Id.split("-")[1])
 
          articuloContenedor.getElementsByClassName("item-valor-nombre")[0].innerText = Nombre;
@@ -25,8 +26,14 @@ linksCategorias.forEach((linkCategoria) => {
          const personalizados = Object.keys(item).filter(key => key.startsWith("personalizado_"));
          
          personalizados.forEach((personalizado, index) => {
-            articuloContenedor.getElementsByClassName(`item-campo-personalizado_${index + 1}`)[0].innerText = personalizado.split(".")[1];
-            articuloContenedor.getElementsByClassName(`item-valor-personalizado_${index + 1}`)[0].innerText = item[personalizado];
+            let itemCampoName = `item-campo-personalizado_${index + 1}`;
+            let itemValueName = `item-valor-personalizado_${index + 1}`;
+            
+            let articuloContenedorItemCampoPersonalizado = articuloContenedor.getElementsByClassName(itemCampoName)[0]
+            if (articuloContenedorItemCampoPersonalizado != null && articuloContenedorItemCampoPersonalizado.innerText != null) {
+               articuloContenedor.getElementsByClassName(itemCampoName)[0].innerText = personalizado.split(".")[1];
+               articuloContenedor.getElementsByClassName(itemValueName)[0].innerText = item[personalizado];
+            }
          });
 
          articuloContenedor.id = Id;
