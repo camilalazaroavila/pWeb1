@@ -5,7 +5,7 @@
     font-family: focus-visible;
     color: #f3dbff;
     align-items: center;
-    background: radial-gradient(circle at center, #64178e, #380057);
+   
 
 
  }
@@ -23,7 +23,7 @@
     align-items: center;
  }
 
- .buscadorr {
+ #buscador {
     display: flex;
     margin: 0 auto;
     font-size: 16px;
@@ -72,7 +72,7 @@
  }
 
  .image-background {
-    background: radial-gradient(circle at center, #a100c2, black);
+    /* background: radial-gradient(circle at center, #a100c2, black); */
     background-repeat: repeat;
 
  }
@@ -131,12 +131,6 @@
     position: relative;
  }
 
- #footer-principal {
-
-    height: 200px;
-    background: radial-gradient(#aa91fd, #a100c2);
-    color: white;
- }
 
  #qr-code {
 
@@ -237,7 +231,6 @@
     padding: 20px;
     text-align: center;
     gap: 10px;
-    background: linear-gradient(#380057, #aa91fd);
     color: white;
 
  }
