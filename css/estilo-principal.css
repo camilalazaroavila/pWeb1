@@ -57,17 +57,17 @@
 
  #seccion-categoria {
     color: #f3dbff;
-    background-color: radial-gradient(circle, rgba(0, 0, 0, 1) 17%, rgba(13, 13, 13, 1) 75%, rgba(174, 0, 255, 1) 100%);
     min-height: 720px;
     /*720px de base */
-    padding: 5px;
+    padding: 40px 20px;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     width: 100%;
-      max-width: 1200px; /*importante para responsive, sino no sabe su maximo y queda desprolijo*/
-  margin: 10px auto;
+    /*importante para responsive, sino no sabe su maximo y queda desprolijo*/
+    justify-items: center;
+    margin: 10px auto;
 
  }
 
@@ -79,17 +79,18 @@
 
 
  .item-valor-portada {
-object-fit: cover;
-height: 150px;
-width: 340px;
+    object-fit: cover;
+    height: 150px;
+    width: 340px;
 
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 
-   
+
 
  }
+
  /* .item-valor-nombre{
    font-size: 100px;
  } */
@@ -267,28 +268,31 @@ width: 340px;
  }
 
  #caja_email {
-   margin-left: 200px;
-       margin-right: 15px;
-background-color:#64178e;
+    margin-left: 200px;
+    margin-right: 15px;
+    background-color: #64178e;
     border-radius: 15px;
 
  }
- .requerimiento::placeholder{
-    color:  aliceblue;
 
-} #registrar_footer{
-   margin-top: 10px;
-   margin-left: 250px;
-       margin-right: 15px;
+ .requerimiento::placeholder {
+    color: aliceblue;
+
+ }
+
+ #registrar_footer {
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-right: 15px;
     background-color: #aa91fd;
     border-radius: 30px;
     padding: 10px;
-}
+ }
 
  .punto {
-/*un backgoun color con radious de 50 asi lo hacemos redondo */
-background-color: #aa91fd;
-border-radius: 50%;
+    /*un backgoun color con radious de 50 asi lo hacemos redondo */
+    background-color: #aa91fd;
+    border-radius: 50%;
     position: fixed;
     right: 20px;
     height: 30px;
@@ -296,11 +300,11 @@ border-radius: 50%;
     padding: 3px;
     bottom: 30px;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px; 
-  color: var(--dark-color-acento-2); 
-  cursor: pointer; 
-  text-decoration: none; 
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: var(--dark-color-acento-2);
+    cursor: pointer;
+    text-decoration: none;
 
  }
