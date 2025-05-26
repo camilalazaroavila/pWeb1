@@ -12,10 +12,11 @@
 
 <body style="background-color: #380057">
 
-   <body id="fondoPrincipal">
+   <!-- <body id="fondoPrincipal"> -->
+
 
       <header id="encabezado-principal">
-         <div class="logo-nombre">
+         <div class="logo-nombre ">
             <img id="logo"
                src="https://img.freepik.com/vector-premium/diseno-vector-logotipo-juego-dragon-esport_343694-1344.jpg"
                alt="logo">
@@ -24,16 +25,16 @@
 
          </div>
 
-         <input id="buscador" placeholder="Search..." class="buscadorr" type="search" name="s" value="">
-         <article id="iniciar-sesion">Log In</article>
-         <article id="registrar">Sign Up</article>
+         <input id="buscador" placeholder="🔍Search..." class="buscadorr" type="search" name="s" value="">
+         <button id="iniciar-sesion">Log In</button>
+         <button id="registrar">Sign Up</button>
 
       </header>
       <header id="encabezado-secundario">
          <h1>ENCABEZADO SECUNDARIO --- CARRUSEL</h1>
       </header>
 
-      <main class="image-background">
+      <main class="image-background" class="conteiner">
          <nav id="navegacion-categoria">
             <a href="#" id="tab-categoria-1" class="tab-categoria">ACCIÓN</a>
             <a href="#" id="tab-categoria-2" class="tab-categoria">ESTRATEGIA</a>
@@ -57,6 +58,7 @@
                      src='https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1741381848'
                      alt='Imagen de Portada'>
                   <!-- <p class="item-valor-portada">Imagen de Portada</p> -->
+
                   <p class="item-valor-descripcion"><span style="font-weight:bold;text-transform:uppercase;"></span>
                   </p>
                   <p class="item-valor-rating"><span style="font-weight:bold;text-transform:uppercase;"></span> </p>
@@ -69,7 +71,7 @@
                   </div>
                </header>
                <div class="detalle-articulo">
-                   <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
+                  <h4 class="item-campo-personalizado_1" style="color:gray;">CAMPO PERSONALIZADO 1</h4>
                   <p class="item-valor-personalizado_1" style="color:gray;">valor personalizado 1</p>
                   <!-- <h4 class="item-campo-personalizado_2" style="color:gray;">CAMPO PERSONALIZADO 2</h4>
                   <p class="item-valor-personalizado_2" style="color:gray;">valor personalizado 2</p>
@@ -472,6 +474,7 @@
             </article>
          </section>
       </main>
+      <a href="#encabezado-principal" class="punto"> ⬆</a>
 
       <footer id="footer-principal">
          <div id="footer-principal-izquierda" class="footer-section">
@@ -484,7 +487,9 @@
          <div id="footer-principal-centro" class="footer-section"><img id="qr-code" src="assets/img/qr.png" />
 
             <h3>CONTACT US</h3>
-
+            <h2 id="footer-info">SIGN UP FOR OUR NEWSLETTER :)</h2>
+            <input id="caja_email" type="email" name="email" placeholder="Ingrese su email" required class="requerimiento">
+            <button id="registrar_footer">Sign Up</button>
 
          </div>
          <div id="footer-principal-derecha" class="footer-section">
