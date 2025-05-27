@@ -133,15 +133,19 @@
 
 
  #qr-code {
-
-
-    position: absolute;
-    top: 50px;
+   position: absolute;
     left: 25px;
     width: 120px;
     height: 120px;
+ }
+ #red-social-icon {
+   padding: 5px;
+ }
 
-
+ #redes-sociales{
+   display: flex;
+   justify-content: center;  
+   
 
  }
 
@@ -200,6 +204,7 @@
     border: #380057;
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 5px;
 
  }
 
@@ -211,6 +216,7 @@
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
     position: relative;
+    padding: 5px;
 
 
  }
@@ -218,7 +224,7 @@
  #footer-principal-derecha {
     background-color: #a100c2;
     border: #380057;
-
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 
@@ -239,16 +245,22 @@
 
     text-align: start;
     font-size: 15px;
+
+    
+
  }
 
  .footer-section h3 {
     text-align: center;
     margin-top: 10px;
     font-size: 20px;
+    margin-bottom: 4px;
+   
  }
 
  .footer-section p {
     margin-left: 25px;
+
  }
 
  #footer-info {
@@ -280,6 +292,7 @@
     background-color: #aa91fd;
     border-radius: 30px;
     padding: 10px;
+    
  }
 
  .punto {
