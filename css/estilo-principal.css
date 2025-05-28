@@ -1,48 +1,116 @@
 ﻿ @import url("temas-colores-fuentes.css");
 
+html,body{
+   overflow-x: hidden;
+  box-sizing: border-box;
+}
+
  #encabezado-principal {
     display: flex;
     font-family: focus-visible;
+    justify-content: space-between;
+    background-color: yellow;
+    align-items: center;
+    padding:15px 20px;
     color: #f3dbff;
     align-items: center;
-   
-
-
+    background: radial-gradient(circle at center, #64178e, #380057);
+    color:#fff;
+    flex-wrap: wrap;
  }
+
+
 
  #logo {
-    border-radius: 50px;
-    width: 50px;
-    height: auto;
-    margin: 10px;
-
- }
+   width:50px;
+   height:50px;
+   object-fit: cover;
+   border-radius:50%;
+}
 
  .logo-nombre {
     display: flex;
     align-items: center;
+    gap:10px;
+    font-size: 1.8rem;
+  margin: 0;
  }
 
- #buscador {
+.acciones{
+   display: flex;
+   align-items: center;
+   gap:10px;
+}
+
+ .buscadorr {
     display: flex;
     margin: 0 auto;
     font-size: 16px;
     width: 400px;
+    padding: 8px 12px;
+     border: none;
+     border-radius: 4px;
+     outline: none;
+     min-width: 180px;
+  max-width: 250px;
     background-color: black;
     color: antiquewhite;
     opacity: 0.6;
     border-radius: 15px;
-
-
  }
+
+
+
+.acciones button{
+padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+
+.acciones button:hover {
+  background-color: #555;
+}
+
+
+@media screen and (max-width: 768px) {
+  #encabezado-principal {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+
+    .acciones {
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .buscadorr,
+  #iniciar-sesion,
+  #registrar {
+    width: 100%;
+    margin: 6px 0;
+  }
+  }
+}
+
 
  #navegacion-categoria {
     background: radial-gradient(circle at center, black, #a100c2);
     display: flex;
-    align-content: space-between;
+    flex-wrap: wrap;
+   align-items: center;
     justify-content: space-around;
-
-
+    position:sticky;
+    top:-2px;
+    height: auto;
+    z-index:3;
  }
 
  .tab-categoria {
@@ -50,47 +118,64 @@
     text-align: center;
     font-size: 25px;
     text-decoration: none;
-    display: flex;
-    align-items: center;
+    display: block;
     color: #f3dbff;
+     padding: 10px 20px;
  }
+
+
+@media (max-width: 768px) {
+  .tab-categoria {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+
+  #navegacion-categoria {
+    justify-content: center; /* mejor distribución */
+  }
+}
+
+
+
+
+
+
+
 
  #seccion-categoria {
     color: #f3dbff;
+    background-color: radial-gradient(circle, rgba(0, 0, 0, 1) 17%, rgba(13, 13, 13, 1) 75%, rgba(174, 0, 255, 1) 100%);
     min-height: 720px;
     /*720px de base */
-    padding: 40px 20px;
+    padding: 5px;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+   display: flex;
+    flex-wrap: wrap; 
+    gap: 16px;      
+    justify-content: center;
+    padding: 10px;
     width: 100%;
-    /*importante para responsive, sino no sabe su maximo y queda desprolijo*/
-    justify-items: center;
-    margin: 10px auto;
+      max-width: 1200px; /*importante para responsive, sino no sabe su maximo y queda desprolijo*/
+  margin: 10px auto;
 
  }
 
  .image-background {
-    /* background: radial-gradient(circle at center, #a100c2, black); */
+    background: radial-gradient(circle at center, #a100c2, black);
     background-repeat: repeat;
 
  }
 
 
  .item-valor-portada {
-    object-fit: cover;
-    height: 150px;
-    width: 340px;
 
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-
-
-
+   width:100%;
+   height:150px;
+   object-fit:cover;
+   border-radius:6px;
+   display:block;
+   background-color: #f0f0f0;
  }
-
  /* .item-valor-nombre{
    font-size: 100px;
  } */
@@ -124,25 +209,137 @@
     padding: 5px;
     width: 350px;
     height: 350px;
-    border-radius: 30px;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
     align-items: top;
     position: relative;
+    box-shadow:0 1px 3px rgba(0,0,0,.2);
  }
 
 
+.articulo-categoria img.item-valor-portada {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 10px;
+}
 
- #red-social-icon {
-   padding: 5px;
- }
 
- #redes-sociales{
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .articulo-categoria {
+    flex: 1 1 100%;  /* Los artículos ocupan toda la fila */
+    max-width: 100%;
+  }
+}
+
+
+/* Opcional: ajustar texto para que no desborde */
+.articulo-categoria p, 
+.articulo-categoria h4 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#footer-principal{
+   background: red;
+}
+
+
+.footer-container{
+   display:flex;
+   justify-content: space-between;
+   background-color: blue;
+}
+
+.footer-section{
+   background-color:blue;
    display: flex;
-   justify-content: center;  
+   flex-direction: column;
    
+}
 
- }
+#footer-principal-izquierda {
+  background-color: #f28b82; /* rojo claro */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#footer-principal-centro {
+  background-color: #fbbc04; /* amarillo claro */
+  width:200px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+#footer-principal-centro .img{
+   background-color: blue;
+   width:100px;
+   display:flex;
+   flex-direction: column;
+   justify-content:flex-start;
+   align-items: center;
+}
+
+
+
+
+
+#footer-principal-derecha {
+  background-color: #34a853; /* verde claro */
+  width:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#footer-principal-izquierda,
+#footer-principal-centro,
+#footer-principal-derecha {
+  flex: 1 1 200px; /* Flexible, base de 200px */
+}
+
+
+#footer-principal-izquierda{ 
+}
+
+
+#footer-principal-izquierda h3 {
+   background-color:red;
+   font-size: 30px;
+   font-weight: bold;
+   border-bottom:#34a853;
+   position:absolute;
+   bottom:30px;
+}
+
+
+#footer-principal-izquierda ul{
+   background-color:violet;
+}
+
+#footer-principal-izquierda ul li{
+
+}
+
+.footer-principal-izquierda-title{
+   width:500px;
+   background-color: blue;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 100px;
+   position:relative;
+   width:300px;
+}
+
 
  /* .detalle-articulo{
    display: none;
@@ -194,102 +391,12 @@
 
  }
 
-#footer-principal {
-  display: grid;
-grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-  color: white;
-}
+ 
 
-.footer-col {
-  background-color: #a100c2;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-}
-
-.footer-col h3 {
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.footer-col p {
-  margin-left: 20px;
-  font-size: 14px;
-}
-
-.redes-sociales {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-.icono-red-social {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-info {
-  text-align: center;
-  font-size: 15px;
-  background-color: #64178e;
-  padding: 8px;
-  border-radius: 15px;
-  margin: 10px 0;
-}
-
-.input-email {
-  display: block;
-  margin: 10px auto;
-  text-align: center;
-  padding: 8px;
-  border-radius: 15px;
-  background-color: #64178e;
-  color: white;
-}
-
-.input-email::placeholder {
-  color: aliceblue;
-}
-
-.btn-footer {
-  display: block;
-  margin: 0 auto;
-  background-color: #aa91fd;
-  border-radius: 30px;
-  padding: 10px 20px;
-  color: black;
-  cursor: pointer;
-}
-
-.btn-footer:hover {
-  background-color: #cbb2fd;
-}
-.company-content {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.company-textos {
-  flex: 1;
-  /*Para ocupar todo el espacio de la caja*/
-}
-
-#qr-code {
-  width: 120px;
-  height:  120px;
-  margin-top: 14px;
-  margin-right: 25px;
-  border-radius: 5px;
-  align-self: flex-start;
-}
  .punto {
-    background-color: #aa91fd;
-    border-radius: 50%;
+/*un backgoun color con radious de 50 asi lo hacemos redondo */
+background-color: #aa91fd;
+border-radius: 50%;
     position: fixed;
     right: 20px;
     height: 30px;
@@ -297,11 +404,62 @@ grid-template-columns: repeat(3, 1fr);
     padding: 3px;
     bottom: 30px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    color: var(--dark-color-acento-2);
-    cursor: pointer;
-    text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px; 
+  color: var(--dark-color-acento-2); 
+  cursor: pointer; 
+  text-decoration: none; 
 
  }
+
+
+
+.item-valor-portada {
+   transition:transform .3s ease;
+}
+
+.item-valor-portada:hover{
+   transform:scale(1.2);
+}
+
+
+
+
+
+
+
+@media screen and (max-width:704px){
+   #encabezado-secundario, h1{
+      text-align: center;
+      font-size:3rem;
+   }
+}
+
+
+
+@media screen and (max-width:800px){
+   #logoNombre{
+      display:none;
+   }
+}
+
+
+
+
+
+
+
+
+@media (max-width:500px){
+   #encabezado-secundario h1{
+      font-size:16px;
+   }
+}
+
+
+@media (max-width:768px){
+   #seccion-categoria{
+
+   }
+}
