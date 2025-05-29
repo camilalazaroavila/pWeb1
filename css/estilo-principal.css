@@ -55,8 +55,7 @@
 .tab-categoria:focus, .tab-categoria:active {
   box-shadow: 0 0 10px 2px #a100c2;
   font-weight:bold;
-  outline: none; /* para que no salga el borde default */
-    border-radius: 50%; /* mantiene los bordes redondeados */
+    border-radius: 50%;
 
 }
 
