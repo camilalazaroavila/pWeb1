@@ -5,6 +5,7 @@
     font-family: focus-visible;
     color: #f3dbff;
     align-items: center;
+    
    
 
 
@@ -21,9 +22,16 @@
  .logo-nombre {
     display: flex;
     align-items: center;
+    
+ }
+ #logoNombre{
+  color: rgb(6, 230, 6);
+  text-shadow: 4px 4px 0 #3c0064;
  }
 
  #buscador {
+            font-family: 'Averia Serif Libre';
+
     display: flex;
     margin: 0 auto;
     font-size: 16px;
@@ -44,6 +52,13 @@
 
 
  }
+.tab-categoria:focus, .tab-categoria:active {
+  box-shadow: 0 0 10px 2px #a100c2;
+  font-weight:bold;
+  outline: none; /* para que no salga el borde default */
+    border-radius: 50%; /* mantiene los bordes redondeados */
+
+}
 
  .tab-categoria {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -90,6 +105,8 @@
 
   .item-valor-nombre{
    font-size: 100px;
+             font-family: 'Averia Serif Libre';
+
  }
 
  /* TODO se oculta el texto precio temporalmente */
@@ -97,16 +114,17 @@
     display: none;
  }
 
- .item-valor-descripcion {
-    display: flex;
-    font-size: 15px;
-    font-weight: bold;
-
- }
+.articulo-categoria:hover .item-valor-descripcion {
+  font-size: 15px;
+          font-family: 'Averia Serif Libre';
+    color: rgb(6, 230, 6);
+/* font-style: italic; */
+}
 
  .item-valor-nombre {
     font-size: 20px;
     color: rgb(6, 230, 6);
+
  }
 
 
@@ -149,6 +167,7 @@
   padding: 10px;
   text-align: center;
   border-radius: 30px;
+  
 
 }
 
@@ -162,6 +181,7 @@
   font-size: 15px;
   text-align: center;
   margin-bottom: 2px;
+  
 }
 
 .info:hover{
@@ -171,6 +191,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
+  
   
 }
 
