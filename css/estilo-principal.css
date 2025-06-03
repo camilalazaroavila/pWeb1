@@ -9,62 +9,7 @@ html,body {
     padding: 15px 30px;
 
  }
-@media screen and (max-width:704px){
-   #encabezado-secundario, h1{
-      text-align: center;
-      font-size:3rem;
-   }
-}
  
-@media screen and (max-width:800px){
-   #logoNombre{
-      display:none;
-   }
-}
-
-@media (max-width: 768px) {
-  .articulo-categoria {
-    flex: 1 1 100%;  
-    max-width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .tab-categoria {
-    font-size: 18px;
-    padding: 8px 10px;
-  }
- 
-  #navegacion-categoria {
-    justify-content: center; 
-    flex-direction: column;
-  }
-}
- 
-@media screen and (max-width: 768px) {
-  #encabezado-principal {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    text-align: center;
- 
-    .acciones {
-    flex-direction: column;
-    width: 100%;
-    max-width: 350px;
-  }
- 
-  #buscadorr,
-  #iniciar-sesion,
-  #registrar {
-    padding: 10px;
-    max-width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 6px 0;
-  }
-  }
-}
 #navegacion-categoria {
     background: radial-gradient(circle at center, black, #a100c2);
     display: flex;
@@ -177,9 +122,9 @@ html,body {
  .item-valor-portada {
     object-fit: cover;
     height: 150px;
-    width: 340px;
-    justify-content: center;
-    align-items: center;
+    width:340px;
+    /* justify-content: center;
+    align-items: center; */
     border-radius: 10px;
  }
 
@@ -317,6 +262,8 @@ grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
   color: white;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer-col {
@@ -358,21 +305,8 @@ grid-template-columns: repeat(3, 1fr);
   margin: 10px 0;
 }
 
-.input-email {
-  display: block;
-  margin: 10px auto;
-  text-align: center;
-  padding: 8px;
-  border-radius: 15px;
-  background-color: #64178e;
-  color: white;
-}
 
-.input-email::placeholder {
-  color: aliceblue;
-}
-
-.btn-footer {
+#btn-footer {
   display: block;
   margin: 0 auto;
   background-color: #aa91fd;
@@ -380,6 +314,8 @@ grid-template-columns: repeat(3, 1fr);
   padding: 10px 20px;
   color: black;
   cursor: pointer;
+    text-decoration: dotted;
+
 }
 
 .btn-footer:hover {
@@ -423,3 +359,143 @@ grid-template-columns: repeat(3, 1fr);
 
  }
  
+
+@media (max-width: 768px) { /*este es para celus*/
+   .item-valor-portada {
+    object-fit: cover;
+    height: auto;
+    width:100%;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+ }
+  #seccion-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .articulo {
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 100%;
+    max-width: 100%; 
+  }  
+  
+  h1{
+      text-align: center;
+      font-size:3rem;
+   }
+
+ 
+   #logoNombre{
+      display:none;
+   
+}
+  .articulo-categoria {
+    flex: 1 1 100%;  
+    max-width: 100%;
+  }
+
+  .tab-categoria {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+ 
+  #navegacion-categoria {
+    justify-content: center; 
+    flex-direction: column;
+  }
+
+ 
+  #encabezado-principal {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+  
+ 
+  #buscador,
+  #iniciar-sesion,
+  #registrar {
+    padding: 10px;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 6px 0;
+  }
+   #footer-principal {
+  display: grid;
+grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+}
+ .footer-col h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .footer-col p {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+
+  .footer-info {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .icono-red-social {
+    width: 20px;
+    height: 20px;
+  }
+}
+/* @media (min-width: 769px) and (max-width: 1024px) { para tablets */
+/* @media (min-width: 600px) and (max-width: 768px) {
+  #seccion-categoria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .articulo-categoria{
+   width: 100%;       
+    max-width: 350px;   
+    height: auto;       
+  }
+  #footer-principal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+  }
+
+  .footer-col h3 {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .footer-col p {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+
+  .footer-info {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .icono-red-social {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+  */
