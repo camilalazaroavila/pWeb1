@@ -4,10 +4,43 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title></title>
+   <link rel="stylesheet" href="../css/estilo-datos-personales.css">
 </head>
 <body>
-   <div>
-      <h1>HOLA MUNDO</h1>
-   </div>
+   <form action="../index.html" method="GET">
+    <h2>Datos Personales</h2>
+    
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="dni">DNI / Identificación:</label>
+    <input type="text" id="dni" name="dni">
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="nacimiento">Fecha de nacimiento:</label>
+    <input type="date" id="nacimiento" name="nacimiento">
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion">
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option value="">Seleccione...</option>
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+      <option value="prefiero_no_decir">Prefiero no decir</option>
+    </select>
+
+    <label for="estado_civil">Estado civil:</label>
+    <input type="text" id="estado_civil" name="estado_civil">
+
+    <button type="submit">Enviar</button>
+  </form>
 </body>
 </html>
