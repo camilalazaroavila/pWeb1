@@ -1,1 +1,62 @@
-﻿/* estilos-registrarse.css */
+﻿ @import url("temas-colores-fuentes.css");
+#fondoPrincipal{
+    background-color: var(--light-color-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+}
+
+#caja{
+    background-color:#8566eb;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+.requerimiento{
+    margin-top: 15px;
+    border-radius: 5px;
+    border: #380057;
+    background-color: #aa91fd;
+    padding: 10px;
+    min-width: 280px;
+
+}
+.requerimiento::placeholder{
+    color:  aliceblue;
+
+}
+
+#button{ 
+    cursor: pointer;
+   display: block;
+  width: 100%; /* ocupa el mismo ancho que los inputs */
+  padding: 10px;
+  color: black;
+  background-color: #e76eff;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+p{
+    text-align: center;
+}
+#inicia-sesion{
+   color: #380057;
+   text-decoration: none;
+font-weight: bold;
+}
+#inicio-de-sesion-caja{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

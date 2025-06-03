@@ -3,9 +3,30 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
+   <title>Sign in</title>
+   <link rel="stylesheet" href="../css/estilo-registrarse.css">
 </head>
+
 <body>
-   <h1>Este es el form de registrarse</h1>
+   <main id="fondoPrincipal">
+      <section id="caja">
+         <h1>Registrarse</h1>
+         <form action="../index.html" method="get">
+            <input type="email" id="email" name="email" placeholder="Email" autofocus="on" class="requerimiento" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" class="requerimiento" required>
+
+
+            <button type="submit" id="button">REGISTRATE</button>
+
+            <article id="inicio-de-sesion-caja">
+               <h5>¿Ya tenés una cuenta?</h5> 
+               <a href="login.html" id="inicia-sesion">Iniciá sesión</a>
+            </article>
+            <p>
+               Al continuar, confirmo que he leido y aceptado los Terminos y Condiciones y las Politicas de Privacidad de XtremeGames.
+            </p>
+         </form>
+   </main>
+   </section>
 </body>
 </html>
