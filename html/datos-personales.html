@@ -8,41 +8,42 @@
   <script type="text/javascript" src="../js/validaciones.js"></script>
 
   </head>
-<body>
-   <form action="../index.html" id="form" name="form" method="GET">
-    <h2>Datos Personales</h2>
-    
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" required>
+<body style="background-color:var(--light-color-texto);">
+    <main id="fondoPrincipal">
+    <section id="caja">
+      <form action="../index.html" id="form" name="form" method="GET">
+        <h2>Datos Personales</h2>
 
-    <label for="dni">DNI / Identificación:</label>
-    <input type="text" id="dni" name="dni">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required />
 
-    <label for="email">Correo electrónico:</label>
-    <input type="email" id="email" name="email">
+        <label for="dni">DNI / Identificación:</label>
+        <input type="text" id="dni" name="dni" placeholder="Ej: 12345678" />
 
-    <label for="telefono">Teléfono:</label>
-    <input type="tel" id="telefono" name="telefono">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ej: correo@ejemplo.com" />
 
-    <label for="nacimiento">Fecha de nacimiento:</label>
-    <input type="date" id="nacimiento" name="nacimiento">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11-1234-5678" />
 
-    <label for="direccion">Dirección:</label>
-    <input type="text" id="direccion" name="direccion">
+        <label for="nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="nacimiento" name="nacimiento" />
 
-    <label for="genero">Género:</label>
-    <select id="genero" name="genero">
-      <option value="">Seleccione...</option>
-      <option value="masculino">Masculino</option>
-      <option value="femenino">Femenino</option>
-      <option value="otro">Otro</option>
-      <option value="prefiero_no_decir">Prefiero no decir</option>
-    </select>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle 123" />
 
-    <label for="estado_civil">Estado civil:</label>
-    <input type="text" id="estado_civil" name="estado_civil">
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+          <option value="">Seleccione...</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+          <option value="prefiero_no_decir">Prefiero no decir</option>
+        </select>
 
-    <button type="submit" onclick="valida_envia()" >Enviar</button>
-  </form>
+        <button class="boton" type="submit" onclick="valida_envia()">Enviar</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>

@@ -329,7 +329,6 @@ grid-template-columns: repeat(3, 1fr);
 
 .company-textos {
   flex: 1;
-  /*Para ocupar todo el espacio de la caja*/
 }
 
 #qr-code {

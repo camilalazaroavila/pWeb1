@@ -1,58 +1,57 @@
-﻿/* estilos-datos-personales.css */
-  body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+﻿@import url("temas-colores-fuentes.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+body {
+  background-color: var(--light-color-texto);
+  font-family: Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: aliceblue;
 }
 
-
-
 form {
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 400px;
-      width: 100%;
-    }
+  background-color: #8566eb;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
 
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
+input,
+select {
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
+  background-color: #aa91fd;
+  color: aliceblue;
+}
 
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
+input::placeholder {
+  color: aliceblue;
+}
 
-    input, select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    button {
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-button:hover {
-      background-color: #45a049;
+label {
+  font-weight: bold;
+}
+h2{
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+}
+button {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  color: black;
+  background-color: #e76eff;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  margin-top: 10px;
 }

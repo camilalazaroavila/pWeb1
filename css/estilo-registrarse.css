@@ -1,4 +1,5 @@
 ﻿ @import url("temas-colores-fuentes.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 #fondoPrincipal{
     display: flex;
     justify-content: center;
@@ -6,7 +7,9 @@
     height: 100vh;
     color: aliceblue;
 }
-
+body{
+    font-family: Poppins;
+}
 #caja{
     background-color:#8566eb;
     padding: 30px;
@@ -33,7 +36,7 @@
 #button{ 
     cursor: pointer;
    display: block;
-  width: 100%; /* ocupa el mismo ancho que los inputs */
+  width: 100%; 
   padding: 10px;
   color: black;
   background-color: #e76eff;

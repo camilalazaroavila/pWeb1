@@ -1,4 +1,5 @@
  @import url("temas-colores-fuentes.css");
+ @import url('https://fonts.googleapis.com/css2?family=Poppins');
 #fondoPrincipal{
     display: flex;
     justify-content: center;
@@ -6,7 +7,9 @@
     height: 100vh;
     color: aliceblue;
 }
-
+body{
+    font-family: Poppins;
+}
 #caja-iniciar-sesion{
   
     background-color:#8566eb;
@@ -25,6 +28,9 @@ background-color: #aa91fd;
 padding: 10px;
 min-width: 280px;
 
+}
+h5{
+    margin: 10px;
 }
 .requerimiento::placeholder{
     color:  aliceblue;
