@@ -453,6 +453,23 @@ grid-template-columns: repeat(1, 1fr);
     height: 20px;
   }
 }
+.carousel-img {
+  object-fit: contain;
+  height: 400px;
+  background-color: black; /* para que se vea prolijo si sobra espacio */
+}
+ 
+@media (max-width: 768px) {
+  .carousel-img {
+    height: 250px;
+  }
+}
+ 
+@media (max-width: 576px) {
+  .carousel-img {
+    height: 180px;
+  }
+}
 /* @media (min-width: 769px) and (max-width: 1024px) { para tablets */
 /* @media (min-width: 600px) and (max-width: 768px) {
   #seccion-categoria {
