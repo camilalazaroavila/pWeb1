@@ -5,32 +5,37 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title></title>
    <link rel="stylesheet" href="../css/estilo-datos-personales.css">
-  <script type="text/javascript" src="../js/validaciones.js"></script>
 
   </head>
 <body style="background-color:var(--light-color-texto);">
     <main id="fondoPrincipal">
     <section id="caja">
-      <form action="../index.html" id="form" name="form" method="GET">
+      <form onsubmit="return validarDatos()" action="../index.html" id="form" name="form" method="GET">
         <h2>Datos Personales</h2>
 
         <label for="nombre">Nombre completo:</label>
         <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required />
+        <div id="error-nombre" class="error-input" aria-live="polite"></div>
 
         <label for="dni">DNI / Identificación:</label>
         <input type="text" id="dni" name="dni" placeholder="Ej: 12345678" />
+        <div id="error-dni" class="error-input" aria-live="polite"></div>
 
         <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" placeholder="Ej: correo@ejemplo.com" />
+        <div id="error-email" class="error-input" aria-live="polite"></div>
 
         <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" name="telefono" placeholder="Ej: 11-1234-5678" />
+        <div id="error-telefono" class="error-input" aria-live="polite"></div>
 
         <label for="nacimiento">Fecha de nacimiento:</label>
         <input type="date" id="nacimiento" name="nacimiento" />
+        <div id="error-nacimiento" class="error-input" aria-live="polite"></div>
 
         <label for="direccion">Dirección:</label>
         <input type="text" id="direccion" name="direccion" placeholder="Ej: Calle 123" />
+        <div id="error-direccion" class="error-input" aria-live="polite"></div>
 
         <label for="genero">Género:</label>
         <select id="genero" name="genero">
@@ -40,10 +45,13 @@
           <option value="otro">Otro</option>
           <option value="prefiero_no_decir">Prefiero no decir</option>
         </select>
+        <div id="error-genero" class="error-input" aria-live="polite"></div>
 
-        <button class="boton" type="submit" onclick="valida_envia()">Enviar</button>
+        <button class="boton" type="submit">Enviar</button>
       </form>
     </section>
   </main>
+
+  <script type="text/javascript" src="../js/validacionDatosPersonales.js"></script>
 </body>
 </html>
