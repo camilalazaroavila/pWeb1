@@ -1,40 +1,40 @@
 function validarFormulario() {
-  var emailInput = document.getElementById('email');
-  var passInput = document.getElementById('pass');
+  var campoCorreo = document.getElementById('email');
+  var campoContrasena = document.getElementById('password');
 
-  var errorEmail = document.getElementById('error-email');
-  var errorPass = document.getElementById('error-pass');
+  var mensajeErrorCorreo = document.getElementById('error-email');
+  var mensajeErrorContrasena = document.getElementById('error-pass');
 
-  var email = emailInput.value.trim();
-  var pass = passInput.value.trim();
+  var correo = campoCorreo.value.trim();
+  var contrasena = campoContrasena.value.trim();
 
-  var regexpEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var expReg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  // Limpiar mensajes previos
-  errorEmail.textContent = "";
-  errorPass.textContent = "";
+  // Limpiar mensajes anteriores
+  mensajeErrorCorreo.textContent = "";
+  mensajeErrorContrasena.textContent = "";
 
-  let valid = true;
+  let esValido = true;
 
-  if (email === "") {
-    errorEmail.textContent = "Por favor, ingrese su correo electrónico.";
-    emailInput.focus();
-    valid = false;
-  } else if (!regexpEmail.test(email)) {
-    errorEmail.textContent = "Por favor, ingrese un email válido (ejemplo@dominio.com).";
-    emailInput.focus();
-    valid = false;
+  if (correo === "") {
+    mensajeErrorCorreo.textContent = "Por favor, ingrese su correo electrónico.";
+    campoCorreo.focus();
+    esValido = false;
+  } else if (!expReg.test(correo)) {
+    mensajeErrorCorreo.textContent = "Por favor, ingrese un correo válido (ejemplo@dominio.com).";
+    campoCorreo.focus();
+    esValido = false;
   }
 
-  if (pass === "") {
-    errorPass.textContent = "Por favor, ingrese su contraseña.";
-    if (valid) passInput.focus();
-    valid = false;
-  } else if (pass.length < 6) {
-    errorPass.textContent = "La contraseña debe tener al menos 6 caracteres.";
-    if (valid) passInput.focus();
-    valid = false;
+  if (contrasena === "") {
+    mensajeErrorContrasena.textContent = "Por favor, ingrese su contraseña.";
+    if (esValido) campoContrasena.focus();
+    esValido = false;
+  } else if (contrasena.length < 6) {
+    mensajeErrorContrasena.textContent = "La contraseña debe tener al menos 6 caracteres.";
+    if (esValido) campoContrasena.focus();
+    esValido = false;
   }
 
-  return valid;
+  return esValido;
 }
