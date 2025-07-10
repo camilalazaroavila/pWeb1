@@ -12,6 +12,8 @@ body {
   color: aliceblue;
 }
 
+
+
 form {
   background-color: #8566eb;
   padding: 30px;
@@ -55,3 +57,52 @@ button {
   border: none;
   margin-top: 10px;
 }
+
+
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode form {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+body.dark-mode input::placeholder {
+  color: #cccccc;
+}
+
+body.dark-mode button {
+  background-color: #aa91fd;
+  color: black;
+}
+
+
+
+#toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+  background-color: #aa91fd;
+  color: black;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
