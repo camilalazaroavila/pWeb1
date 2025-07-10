@@ -7,8 +7,13 @@
    <link rel="stylesheet" href="../css/estilo-datos-personales.css">
 
   </head>
-<body style="background-color:var(--light-color-texto);">
-    <main id="fondoPrincipal">
+<body class="light-mode">
+  
+  <!-- Botón para cambiar de modo -->
+<button id="toggle-dark-mode" title="Modo Oscuro/Claro">🌙</button>
+
+
+  <main id="fondoPrincipal">
     <section id="caja">
       <form onsubmit="return validarDatos()" action="../index.html" id="form" name="form" method="GET">
         <h2>Datos Personales</h2>
@@ -51,7 +56,7 @@
       </form>
     </section>
   </main>
-
   <script type="text/javascript" src="../js/validacionDatosPersonales.js"></script>
+ <script type="text/javascript" src="../js/darkModeDatosPersonales.js"></script>
 </body>
 </html>
