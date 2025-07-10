@@ -1,64 +1,173 @@
 ﻿ @import url("temas-colores-fuentes.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
-#fondoPrincipal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: aliceblue;
-}
-body{
-    font-family: Poppins;
-}
-#caja{
-    background-color:#8566eb;
-    padding: 30px;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-}
-.requerimiento{
-    margin-top: 15px;
-    border-radius: 5px;
-    border: #380057;
-    background-color: #aa91fd;
-    padding: 10px;
-    min-width: 280px;
 
-}
-.requerimiento::placeholder{
-    color:  aliceblue;
-
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-color-texto);
+  color: #121212;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#button{ 
-    cursor: pointer;
-   display: block;
-  width: 100%; 
-  padding: 10px;
-  color: black;
-  background-color: #e76eff;
-  border-radius: 5px;
-  font-size: 20px;
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+#fondoPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#caja {
+  background-color: #8566eb;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(133, 102, 235, 0.6);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode #caja {
+  background-color: #1e1e1e;
+  box-shadow: 0 0 15px rgba(170, 145, 253, 0.8);
+}
+
+h1 {
+  margin-top: 0;
   text-align: center;
-  border: none;
-  text-decoration: none;
-  margin-top: 30px;
+  font-weight: 700;
+  color: inherit;
 }
 
-p{
-    text-align: center;
+input.requerimiento {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #aa91fd;
+  color: aliceblue;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-#inicia-sesion{
-   color: #380057;
-   text-decoration: none;
-font-weight: bold;
+
+input.requerimiento::placeholder {
+  color: aliceblue;
+  opacity: 0.8;
 }
-#inicio-de-sesion-caja{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+
+body.dark-mode input.requerimiento {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode input.requerimiento::placeholder {
+  color: #ccc;
+}
+
+button#button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #e76eff;
+  color: black;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button#button:hover {
+  background-color: #d05edd;
+}
+
+body.dark-mode button#button {
+  background-color: #aa91fd;
+  color: black;
+}
+
+body.dark-mode button#button:hover {
+  background-color: #cbb2fd;
+}
+
+#inicio-de-sesion-caja {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: inherit;
+}
+
+#inicio-de-sesion-caja h5 {
+  margin: 0;
+}
+
+#inicia-sesion {
+  color: #380057;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#inicia-sesion:hover {
+  text-decoration: underline;
+}
+
+body.dark-mode #inicia-sesion {
+  color: #aa91fd;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: inherit;
+  line-height: 1.4;
+}
+
+
+#toggle-dark-mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #aa91fd;
+  color: black;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+#toggle-dark-mode:hover {
+  background-color: #cbb2fd;
+}
+
+body.dark-mode #toggle-dark-mode {
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+}
+
+body.dark-mode #toggle-dark-mode:hover {
+  background-color: #444;
 }

@@ -7,31 +7,34 @@
    <link rel="stylesheet" href="../css/estilo-registrarse.css">
 </head>
 
-<body style="background-color:var(--light-color-texto);">
-   <main id="fondoPrincipal">
-<section id="caja">
-<h1>Registrarse</h1>
-<form onsubmit="return validarDatos()" action="datos-personales.html" method="get">
-<input type="text" id="email" name="email" placeholder="Email" autofocus class="requerimiento">
-<div id="error-email" class="error-input"></div>
- 
-      <input type="password" id="password" name="password" placeholder="Contraseña" class="requerimiento">
-<div id="error-pass" class="error-input"></div>
- 
-      <button type="submit" id="button">REGISTRATE</button>
- 
-      <article id="inicio-de-sesion-caja">
-<h5>¿Ya tenés una cuenta?</h5>
-<a href="login.html" id="inicia-sesion">Iniciá sesión</a>
-</article>
- 
-      <p>
-        Al continuar, confirmo que he leído y aceptado los Términos y Condiciones y las Políticas de Privacidad de XtremeGames.
-</p>
-</form>
-</section> <!-- ← CIERRE correcto de <section> -->
-</main>
+<body class="light-mode">
+
+  <!-- Botón para alternar modo oscuro/claro -->
+  <button id="toggle-dark-mode" title="Modo Oscuro/Claro">🌙</button>
+
+  <main id="fondoPrincipal">
+    <section id="caja">
+      <h1>Registrarse</h1>
+      <form action="datos-personales.html" method="get">
+        <input type="email" id="email" name="email" placeholder="Email" autofocus class="requerimiento" required />
+        <input type="password" id="password" name="password" placeholder="Contraseña" class="requerimiento" required />
+
+        <button type="submit" id="button">REGISTRATE</button>
+
+        <article id="inicio-de-sesion-caja">
+          <h5>¿Ya tenés una cuenta?</h5> 
+          <a href="login.html" id="inicia-sesion">Iniciá sesión</a>
+        </article>
+
+        <p>
+          Al continuar, confirmo que he leído y aceptado los Términos y Condiciones y las Políticas de Privacidad de XtremeGames.
+        </p>
+      </form>
+    </section>
+  </main>
+
    
      <script src="../js/validacionRegistrarse.js"></script>
+     <script src="../js/darkModeRegistrarse.js"></script>
 </body>
 </html>
