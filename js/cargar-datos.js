@@ -2,13 +2,14 @@
 import items from "../data/items.json" with { type: 'json' };
 // import configuracion from "../../config/configuracion.json" with { type: 'json' };
 import configuracion from "../config/configuracion.json" with { type: 'json' };
-
+import { actualizarFavoritosVisibles } from "./favoritos.js";
 const tabCategoria1 = document.getElementById("tab-categoria-1");
 
 let linksCategorias = document.querySelectorAll("a.tab-categoria");
 
 linksCategorias.forEach((linkCategoria) => {
    linkCategoria.addEventListener("click", () => {
+      actualizarFavoritosVisibles();
       items.forEach((item) => {
          const { Categoria, Id, Nombre, Autor, Portada, Descripcion, Rating } = item;
 

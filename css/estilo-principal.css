@@ -175,6 +175,37 @@ html,body {
 
 
 
+.favorito-container {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 10;
+}
+
+.favorito-checkbox {
+  display: none;
+}
+
+.favorito-label {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  text-shadow: 1px 1px 3px black;
+}
+
+.favorito-label:hover {
+  transform: scale(1.2);
+}
+
+.favorito-checkbox:checked + .favorito-label {
+  color: red;
+  text-shadow: 1px 1px 4px black;
+}
+
+
+
+
  .articulo-categoria {
     background: linear-gradient(202deg, rgba(0, 0, 0, 1) 74%, rgba(174, 0, 255, 1) 100%);
     border: 2px solid #380057;
@@ -650,11 +681,9 @@ grid-template-columns: repeat(1, 1fr);
 .d-none {
     display: none;
 }
-<<<<<<< HEAD
 .popup .ver-mas {
   display: none;
 }
-=======
 
 
 .body-style-dark-mode {
@@ -742,4 +771,16 @@ grid-template-columns: repeat(1, 1fr);
   background-color: #7a33b7;
   color: #eee;
 }
->>>>>>> 33e89eda45bc19ac84214c9c41301dfa1a0f384d
+#favoritos-container {
+   color: #f3dbff;
+    min-height: 720px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    justify-items: center;
+    margin: 10px auto;
+
+}
