@@ -5,7 +5,7 @@ html,body {
  
 }
 .body-style{
-   background: radial-gradient(circle at center, #a100c2, black);
+background: radial-gradient(circle at center, var(--light-color-acento-3), var(--light-color-fondo));
 }
 /*.body-style-dark-mode{
    background: radial-gradient(circle at center, #e4ccf5, #ffffff);
@@ -26,7 +26,8 @@ html,body {
  }
  
 #navegacion-categoria {
-    background: radial-gradient(circle at center, black, #a100c2);
+    background: radial-gradient(circle at center, var(--light-color-acento-1), var(--light-color-acento-3));
+
     display: flex;
     flex-wrap: wrap;
    align-items: center;
@@ -83,7 +84,6 @@ html,body {
  }
  #logoNombre{
   color: rgb(6, 230, 6);
-  text-shadow: 4px 4px 0 #3c0064;
 
  }
 
@@ -93,7 +93,7 @@ html,body {
     margin: 0 auto;
     font-size: 17px;
     width: 400px;
-    background-color: black;
+    background-color: var(--light-color-acento-2);
     color: antiquewhite;
     opacity: 0.5;
     border-radius: 15px;
@@ -103,7 +103,7 @@ html,body {
  }
 
  #navegacion-categoria {
-    background: radial-gradient(circle at center, black, #a100c2);
+    /* background: radial-gradient(circle at center, black, #a100c2); */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -157,7 +157,7 @@ html,body {
   .item-valor-nombre{
              font-family: 'Averia Serif Libre';
               font-size: 20px;
-    color: rgb(6, 230, 6);
+    color: rgb(70, 1, 116);
 
  }
 
@@ -210,8 +210,9 @@ html,body {
 
 
  .articulo-categoria {
-    background: linear-gradient(202deg, rgba(0, 0, 0, 1) 74%, rgba(174, 0, 255, 1) 100%);
-    border: 2px solid #380057;
+     background: radial-gradient(circle at center, var(--light-color-acento-1), var(--light-color-acento-3));
+
+border: 2px solid #381e46;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     font-size: 15px;
@@ -330,7 +331,7 @@ grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-col {
-  background-color: #a100c2;
+  background-color: var(--light-color-acento-2);
   border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
   padding: 10px;
@@ -372,7 +373,7 @@ grid-template-columns: repeat(3, 1fr);
 #btn-footer {
   display: block;
   margin: 0 auto;
-  background-color: #aa91fd;
+  background-color: #7b5be4;
   border-radius: 30px;
   padding: 10px 20px;
   color: black;
@@ -403,7 +404,6 @@ grid-template-columns: repeat(3, 1fr);
   align-self: flex-start;
 }
  .punto {
-    background-color: #aa91fd;
     border-radius: 50%;
     position: fixed;
     right: 20px;
@@ -689,7 +689,7 @@ grid-template-columns: repeat(1, 1fr);
 }
 
 
-.body-style-dark-mode {
+ .body-style-dark-mode {
   background: radial-gradient(circle at center, #1a1a1a, #000);
   color: #ccc;
   transition: background 0.3s ease, color 0.3s ease;
@@ -705,10 +705,10 @@ grid-template-columns: repeat(1, 1fr);
   background: radial-gradient(circle at center, #000, #4b197c);
   border-color: #6600cc;
   color: #ccc;
-}
+} 
  
 .body-style-dark-mode #iniciar-sesion {
-  background-color: #7a33b7;
+background-color: #7a33b7;
   color: #eee;
   border: none;
 }
@@ -771,9 +771,13 @@ grid-template-columns: repeat(1, 1fr);
 }
  
 .body-style-dark-mode .punto {
-  background-color: #7a33b7;
   color: #eee;
+} 
+.body-style-dark-mode #navegacion-categoria{
+      background: radial-gradient(circle at center, black, #a100c2);
+
 }
+
 #favoritos-container {
    color: #f3dbff;
     min-height: 720px;
@@ -808,8 +812,9 @@ grid-template-columns: repeat(1, 1fr);
 }
 
 #logoNombre {
-  color: rgb(6, 230, 6);
-  text-shadow: 4px 4px 0 #3c0064;
+  color: rgb(61, 11, 78);
+  text-shadow: 4px 4px 0 #a74be5;
+  font-weight: bold;
   font-size: 24px;
 }
 

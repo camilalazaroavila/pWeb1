@@ -39,12 +39,12 @@ boton.addEventListener('click', () => {
   footerInfo?.classList.toggle('dark-mode');
 
   // Cambiar texto y estilos del botón modo oscuro
-  if (body.classList.contains('body-style-dark-mode')) {
-    boton.textContent = 'Dark';
+    if (body.classList.contains('body-style-dark-mode')) {
+    boton.innerHTML = '🌙'; // Luna para modo oscuro
     boton.classList.remove('btn-light');
     boton.classList.add('btn-dark');
   } else {
-    boton.textContent = 'Light';
+    boton.innerHTML = '🌞'; // Sol para modo claro
     boton.classList.remove('btn-dark');
     boton.classList.add('btn-light');
   }
