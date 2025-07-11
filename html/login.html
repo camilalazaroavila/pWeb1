@@ -6,14 +6,14 @@
   <title>Log in</title>
   <link rel="stylesheet" href="../css/estilo-login.css">
 </head>
-<body class="light-mode" style="background-color:var(--light-color-texto);">
+<body class="light-mode">
 <button id="toggle-dark-mode" title="Modo Oscuro/Claro">🌙</button>
   <main id="fondoPrincipal">
     <section id="caja-iniciar-sesion">
       <h5>¡Bienvenido nuevamente!</h5>
       <h2>Iniciar Sesión</h2>
 
-      <form onsubmit="return validarFormulario()" action="../datos-personales.html" method="get">
+      <form onsubmit="return validarFormulario()" action="datos-personales.html" method="get">
         <input type="text" id="email" name="email" placeholder="   Email*" autofocus class="requerimiento" >
 <div id="error-email" class="error-input"></div>
 

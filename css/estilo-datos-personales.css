@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 body {
-  background-color: var(--light-color-texto);
   font-family: Poppins;
   display: flex;
   justify-content: center;
@@ -12,7 +11,9 @@ body {
   color: aliceblue;
 }
 
-
+.light-mode{
+  background-color: #fcfcfd;
+}
 
 form {
   background-color: #8566eb;

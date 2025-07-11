@@ -7,6 +7,9 @@
     height: 100vh;
     color: aliceblue;
 }
+.light-mode{
+  background-color: #fcfcfd;
+}
 body{
     font-family: Poppins;
 }

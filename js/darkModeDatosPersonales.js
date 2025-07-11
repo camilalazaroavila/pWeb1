@@ -4,7 +4,7 @@ const toggle = document.getElementById("toggle-dark-mode");
     document.body.classList.toggle("light-mode");
     const esOscuro = document.body.classList.contains("dark-mode");
     localStorage.setItem("modoOscuro", esOscuro ? "true" : "false");
-    toggle.textContent = esOscuro ? "☀️ Modo Claro" : "🌙 Modo Oscuro";
+    toggle.textContent = esOscuro ? "☀️" : "🌙";
   });
 
 
@@ -14,6 +14,6 @@ const toggle = document.getElementById("toggle-dark-mode");
     if (localStorage.getItem("modoOscuro") === "true") {
       document.body.classList.add("dark-mode");
       document.body.classList.remove("light-mode");
-      document.getElementById("toggle-dark-mode").textContent = "☀️ Modo Claro";
+      document.getElementById("toggle-dark-mode").textContent = "☀️";
     }
   });
