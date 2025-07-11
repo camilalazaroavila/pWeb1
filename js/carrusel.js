@@ -11,7 +11,6 @@ function numeroAleatorio() {
 function obtenerPortadaAleatoria(numeroAleatorio){
   let portadaAleatoria;
   portadaAleatoria = items[numeroAleatorio].Portada
-  console.log(portadaAleatoria);
   
   //Acá deben agregar el código para obtener una portada aleatoria (portada de algún item),
   //y guardarla en la variable portadaAleatoria
@@ -38,8 +37,6 @@ let i = 0;
 
 
 tituloSlide.forEach(titulo => {
-  
-    console.log(i);
     titulo.textContent = obtenerNombreAleatorio(numero[i]);
     i++
 });

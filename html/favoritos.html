@@ -11,33 +11,28 @@
 <body class="body-style">
    <!-- Header principal -->
    <div id="encabezado-principal">
-      <div class="logo-nombre"></div>
-         <img id="logo"
-            src="https://img.freepik.com/vector-premium/diseno-vector-logotipo-juego-dragon-esport_343694-1344.jpg "
-            alt="logo">
-         <h1 id="logoNombre">XtremeGames</h1>
-      <a href="login.html"><button id="iniciar-sesion">Log In</button></a>
-      <a href="registrarse.html"><button id="registrar">Sign Up</button></a>
-      <button type="button" class="btn-tema">
-          <img id="tema" src="../assets/img/tema.png" height="25px" width="25px">
-      </button>
-      <button type="button" class="btn btn-light" id="modo-oscuro">Light</button>
+      <div class="logo-nombre">
+         <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+            <img id="logo"
+               src="https://img.freepik.com/vector-premium/diseno-vector-logotipo-juego-dragon-esport_343694-1344.jpg"
+               alt="logo">
+            <h1 id="logoNombre">XtremeGames</h1>
+         </a>
+         </div>
+      <div class="acciones-usuario">
+            <a href="login.html"><button id="iniciar-sesion">Log In</button></a>
+            <a href="registrarse.html"><button id="registrar">Sign Up</button></a>
+      </div>
    </div>
 
-   
    <main>
-      
-
       <section id="seccion-categoria">
             <div id="favoritos-container" class="row g-4">
             <!-- aca van las cartas -->
          </div>
-
-         </section>
-
+      </section>
    </main>
 
-   
    <a href="#encabezado-principal" class="punto"> ⬆</a>
    <footer id="footer-principal">
       <div class="footer-col">
@@ -73,45 +68,6 @@
          </div>
       </div>
    </footer>
-
   <script type="module" src="../js/cargarFavoritos.js"></script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/estilo-principal.css">
-</head>
-<body>
-    <h1>Mis Favoritos</h1>
-
-     <section id="seccion-categoria">
-       <section id="contenedorFavorito">
-        
-      </section>
-      
-     </section>
-    
-     
-
-
-     <div class="footer-col">
-  <h3>COMPANY</h3>
-  <div class="company-content">
-    <div class="company-textos">
-      <p>IMAGE SOUNDS GMBH</p>
-      <p>ABOUT US</p>
-      <p>CONTACT</p>
-      <p>REFERENCES</p>
-    </div>
-    <img id="qr-code" src="assets/img/qr.png" alt="QR Code">
-  </div>
-</div>
-
-  <script src="../js/index.js" type="module"></script>
 </body>
 </html>
